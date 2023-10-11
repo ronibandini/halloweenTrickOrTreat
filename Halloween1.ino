@@ -59,7 +59,7 @@ void setup ()
     delay(3000);
   }
   
-  DF2301Q.setVolume(10);
+  //DF2301Q.setVolume(0);
   DF2301Q.setMuteMode(1);   
   DF2301Q.setWakeTime(60);
   delay(1000);
@@ -114,9 +114,9 @@ void loop ()
     if (CMDID==8){ // no
       Serial.print("Happy halloween");
       playSound(5); 
-      delay(3000);
+      delay(2000);
       playSound(7); // happy music
-      dance(50);     
+      dance(110);     
     }
     
   }
